@@ -5,7 +5,7 @@ import ColorBoxContainer from './component/color-box-container/color-box-contain
 function App() {
   return (
     <div>
-      <ColorBoxContainer numBox='10'/>
+      <ColorBoxContainer numBox='15'/>
     </div>
   );
 }

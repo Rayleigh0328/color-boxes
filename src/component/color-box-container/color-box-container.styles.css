@@ -1,0 +1,27 @@
+.ColorBoxContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ColorBoxContainer .ColorBoxList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.ColorBoxContainer button {
+  margin-top: 3rem;
+  background-color : black;
+  color: white;
+  border-radius: 10px;
+  width : 10rem;
+  height: 2rem;
+}
+
+.ColorBoxContainer button:hover {
+  background-color: grey;
+}

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import "./color-box.styles.css";
+
 export default class ColorBox extends Component {
   constructor(props){
     super(props)
@@ -10,13 +12,14 @@ export default class ColorBox extends Component {
   }
 
   render(){
+    const {red, green, blue} = this.props;
     return (
       <div 
         className="ColorBox" 
-        style={{backgroundColor:`rgb(${this.props.red},${this.props.green},${this.props.blue})`}} 
+        style={{backgroundColor:`rgb(${red},${green},${blue})`}} 
         onClick={this.handleClick}
       >
-        dummyText
+        <p>rgb:({red},{green},{blue})</p>
       </div>
     )
   }
